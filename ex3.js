@@ -15,14 +15,14 @@
  */
 
 /**
- * Ejecuta el siguiente código e intenta averiguar que está sucediendo. CONTESTA A LA PREGUNTA: ¿Porque el úñtimo mensaje dice "Pez siguiente: undefined?"
+ * Ejecuta el siguiente código e intenta averiguar que está sucediendo. CONTESTA A LA PREGUNTA: ¿Porque el úñtimo mensaje dice "Pez siguiente: undefined?" Porque muchos_peces.length es igual a 4 y no existe el índice 4.
  */
 
-let muchos_peces = ["Dory", "Nemo", "Shipho", "Estrella"];
+let muchosPeces = ["Dory", "Nemo", "Shipho", "Estrella"];
 
 for (let i = 0; i <= muchos_peces.length; i++) {
-  let siguiente_pez = muchos_peces[i];
-  console.log("Pez siguiente: " + siguiente_pez);
+  let siguientePez = muchos_peces[i];
+  console.log("Pez siguiente: " + siguientePez);
 }
 
 /**

@@ -5,9 +5,9 @@ let numeros = [1, 20, -10, 3, 0, 30, - 1, 3, - 7];
 // foreach. Recibe como parámetro uan función de callback. La función se invoca tantas veces como elementos tiene el array.
 // Cuando necesitamos iterar por TODOS los elementos del array, el foreach es el método más adecuado
 
-// numeros.forEach((x)=>{
-//     console.log(x);
-// });
+numeros.forEach((x)=>{
+    console.log(x);
+});
 
 // Equivalente:
 // for (let i=0; i<numeros.length;i++) {
@@ -29,7 +29,7 @@ let positivos = numeros.filter((x) => {
 let positivosES6 = numeros.filter(x => x > 0);
 
 // console.log(positivos);
-// console.log(positivosES6);
+console.log(positivosES6);
 
 
 //map.https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map
@@ -41,14 +41,15 @@ let saludos = nombres.map((nombre) => {
     return 'Hola ' + nombre;
 })
 
+
 //  console.log(nombres);
-// console.log(saludos);
+console.log(saludos);
 
 let caracteresCadaNombre = nombres.map((nombre) => {
     return nombre.length;
 })
 
-// console.log(caracteresCadaNombre)
+console.log(caracteresCadaNombre)
 
 // sort
 // Queremos ordenar el array de menor a mayor número 
@@ -64,7 +65,11 @@ numeros.sort((a, b) => {
     return 0;
 
 });
-//console.log(numeros)
+console.log("sort: ", numeros)
+
+const numeros2 = numeros.sort((a, b) => a - b);
+
+console.log("sort2: ", numeros2)
 
 // voy a ordenar los nombres por tamaño del nombre. Quiero ordenarlo
 // de nombres más cortos primeros, y lo más largos, al final del array
@@ -85,7 +90,12 @@ nombres.sort((a, b) => {
     return 0;
 })
 
-// console.log(nombres);
+console.log("sort nombres", nombres);
+
+const nombres2 = nombres.sort((a, b) => a.length - b.length);
+console.log("sort nombres2", nombres2)
+
+
 
 let usuarios = [{
     nombre: 'Pepe',

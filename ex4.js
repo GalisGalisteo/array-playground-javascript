@@ -12,6 +12,7 @@
 
  /**
   * Fíjate sin embargo qué valor arroja aplicar indexOf cuando buscamos a "estrella". CONTESTA: ¿Por qué crees que sucede esto?
+  * Porque estrella no está en el array, debería ser Estrella, con la E mayúsucla.
   */
 
   let pezPosicion2 = muchos_peces.indexOf("estrella")

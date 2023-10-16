@@ -15,7 +15,7 @@ const usuarios = [{
 // Busca en la base de datos si existe un usuario con el usernae 'omiras'
 
 let resultado = usuarios.some( (usuario) => {
-    //console.log("Busco: ", usuario);
+    // console.log("Busco: ", resultado);
     return usuario.username == 'omiras';
 } )
 
@@ -26,11 +26,11 @@ let todosSuscritos = usuarios.every(usuario => usuario.subscribed)
 
 // Find. Dame el primer usuario que tenga más de 6 caracteres en su username
 let usuarioLargo = usuarios.find(usuario => usuario.username.length > 6);
-console.log(usuarioLargo);
+// console.log(usuarioLargo);
 
 // FindIndex. Dame la POSICIÓN que ocupa en el array el primer usuario que tenga más de 6 carácteres en su username
 let usuarioLargoPosicion = usuarios.findIndex(usuario => usuario.username.length > 6);
-console.log(usuarioLargoPosicion);
+// console.log(usuarioLargoPosicion);
 
 // Slice. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
 
